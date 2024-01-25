@@ -19,6 +19,5 @@
     <body>
         <?php include('navbar.php'); ?>
         <main>
-            <section class="mt-lg-5">
 
             

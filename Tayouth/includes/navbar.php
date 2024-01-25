@@ -1,36 +1,31 @@
-<header class="header" id="header">
-  <nav class="nav bd-container">
-    <!-- <a href="index.php"><li href="index.php" class="nav__logo" style="font-size: larger;">Tayouth</li></a> -->
-    <img src="img/logo.png" style="width: 50px; height: 50px;">
-    <div class="nav__menu mt-lg-3" id="nav-menu">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.php" class="nav__link active-link">Home</a></li>
-        <li class="nav__item"><a href="503.php" class="nav__link">About</a></li>
+<section class="header">
+	<nav>
+		<!-- <a href="index.html"><img src="img/logo.png"></a> -->
+		<div class="nav-links" id="navLinks">
+			 <ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Our Work</a></li>
+				<li><a href="">News & Stories</a></li>
+				<button style="color:white;" type="button" class="btn btn-outline-warning">Donate <i class="fa-regular fa-heart"></i></button>
+			</ul>
+		</div> 
+	</nav>
+</section>
 
-        <?php 
-          if(isset($_SESSION['auth'])){
-            ?>  
-              <li class="nav-item nav__item dropdown">
-                <a class="dropdown-toggle nav__link" href="#" id="navbarDropdown"  data-bs-toggle="dropdown">
-                  <?= $_SESSION['auth_user']['name']; ?>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="nav__link dropdown-item text-black" href="edit-acc.php"><i class="fa-solid fa-user fa-xs pe-lg-2"></i>My Profile</a></li>
-                  <li><a class="nav__link dropdown-item text-black" href="logout.php"><i class="fa-solid fa-right-from-bracket fa-xs pe-lg-2"></i>Logout</a></li>
-                </ul>
-              </li>
-            <?php
-          }else{
-            ?> 
-              <li class="nav__item"><a href="register.php" class="nav__link" >Join Now</a></li> 
-              <li class="nav__item"><a href="login.php" class="nav__link  text-center text-white" style="background: #1f8555; border-radius:100px; width:100px; border: none;">Sign in</a></li>
-            <?php
-          }
-        ?>
-      </ul>
-    </div>
-    <div class="nav__toggle" id="nav-toggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-  </nav>
-</header>
+
+
+
+
+
+	<!------JavaScript for Toggle Menu------->
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu() {
+			navLinks.style.right = "0"
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px"
+		}
+	</script>

@@ -5,20 +5,42 @@
     include('./includes/header.php');
     ?>
     <section>
-        <video autoplay muted loop id="myVideo" class="bg-vid">
+        <video autoplay muted loop id="myVideo" class="bg-vid" style="background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));">
             <source src="img/videohome.mp4" type="video/mp4">
         </video>
         <div class="container">
             <div class="row min-vh-100 align-items-center">
                 <div class="col-lg-12 col-sm-12">
-                    <h1 style="letter-spacing: 10px; font-size: 100pt; color: var(--first-color);" class="pb-lg-0 mb-lg-0">Tayouth</h1>
-                    <h3 style="letter-spacing: 3px; font-size: 15pt;" class="text-white ps-lg-4">Your Donation Can Help provide food to people who <br> are struggling to feed themeselve and their families.</h3>
-                    <p id="text" class="text-white ps-lg-4"></p>
+                    <h1 style="color:#e9aa01; letter-spacing: 0px; font-size: 20px;">WELCOME TO TAYOUTH<h1>
+                            <h1 style="color:white; letter-spacing: 0px; font-size: 60px;"> Let's Save The World<br>By Savings Lives</h1>
+                            <Volunteer style="color:white;">Every heartbeat matters. Every breath deserves a<br>chance. Every single step we take together brings us<br>closer to a world where no life is left behind.</p>
+                                <button style="color:white;" type="button" class="btn btn-outline-warning">Join Us! <span style='font-size:18x;'>&#8599;</span></button>
+                                <!-- <p id="text" class="text-white ps-lg-4"></p> -->
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="img/logotp.png" style="height: 200px; width: 500px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 class="justify-content-right">Lorem ipsum dolor sit amet consectetur</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8" style="background-color: #e4e4e4;">
 
+                </div>
+            </div>
+        </div>
+    </section>
     <section style="padding-bottom: 100px; background-color: #e4e4e4;">
         <div class="container">
             <div class="row align-items-center">
@@ -58,7 +80,7 @@
             </div>
         </div>
     </section>
-    
+
     <section style="padding-bottom: 100px; background-color: #e4e4e4;">
         <div class="container">
             <div class="row align-items-center">
